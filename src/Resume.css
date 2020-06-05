@@ -1,0 +1,92 @@
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    color: wheat;
+}
+
+.resume-title{
+    padding:50px;
+    text-align: center;
+    font-family: "Tangerine", serif;
+    font-size: 40px;
+    animation:titleAnimae ease 4s;
+}
+
+@keyframes titleAnimae{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+}
+
+.resume-workCompanies{
+    display: flex;
+    flex-direction: column;
+}
+.resume-company1, .resume-company2, .resume-company3{
+    display: flex;
+    flex-direction: row;
+    margin:50px 50px 0px 100px;
+}
+
+.amazon-pic, .verizon-pic, .delta-pic1{
+    height: 300px;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 10px;
+    animation: picAnimae ease 4s;
+}
+
+@keyframes picAnimae{
+    0% {position: relative;right: 400px}
+    100%{position: relative;right: 0px;}
+}
+
+.amazon-pic:hover, .verizon-pic:hover, .delta-pic1:hover{
+    opacity: 1;
+}
+.delta-pic{
+    height: 100px;
+    cursor: pointer;
+    animation: deltaAnime 8s infinite ease;
+}
+
+@keyframes deltaAnime{
+    0% {position: relative;left: 1200px;}
+    100%{position: relative;left: -300px;}
+}
+
+.company1-JobDescription, .company3-JobDescription{
+    margin-left: 200px;
+    padding:50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: descAnimae ease 4s;
+}
+
+@keyframes descAnimae{
+    0% {position: relative;left: 200px;}
+    100%{position: relative;left: 0px;}
+}
+
+.company2-JobDescription{
+    margin-left: 200px;
+    padding:150px 0px 0px 0px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: descAnimae1 ease 10s;
+
+}
+@keyframes descAnimae1{
+    0% {position: relative;left: 200px;}
+    100%{position: relative;left: 0px;}
+}
+.resume-workExperience{
+    padding:30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: expAnimae ease 8s;
+}
+
+@keyframes expAnimae{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+}

@@ -1,0 +1,45 @@
+.toolbar{
+    position: absolute;
+    top:0;
+    left: 0;
+    height:40px;
+    background: #222222;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-items ul {
+	list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;   
+
+}
+
+.nav-items ul a {
+	padding: 10px;
+    color: #fff;
+
+}
+
+.nav-items ul li a:hover {
+	color: lightseagreen;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+@media screen and (max-width:600px) {
+    .toolbar{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 20px;    
+        width: 100%;
+        background: black; 
+    }
+
+    .nav-items ul {
+        display: none;
+    }
+}

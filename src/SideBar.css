@@ -1,0 +1,127 @@
+.sidebar-items{
+	display: flex;
+	flex-direction: column;
+	top:0;
+	position: fixed;
+	height:100%;
+	width: 100%;
+	box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+	background-color: #222222;
+	z-index: 200;
+	transform: translateY(-100%);
+	transition:0.9s ease;
+}
+
+.sidebar-items.open{
+	transform: translateX(0);
+}
+
+
+.image-rotator{
+	display: none;
+}
+.sidebar-items .menu-contents{
+	display: none;
+}
+.sidebar-items .menu-about{
+	display:flex;
+	flex-direction: column;
+	position: absolute;
+    top: 50%; 
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+@media screen and (max-width:600px) {
+
+	.sidebar-items{
+		display: flex;
+		flex-direction: column;
+		top:0;
+		left:0;
+		position: fixed;
+		height:100%;
+		width: 20%;
+		max-width: 400px;  
+		box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+		background-color: #222222;
+		z-index: 200;
+		transform: translateX(-100%);
+		transition:0.9s ease;
+	}
+
+	.sidebar-items.open{
+		transform: translateX(0);
+	}
+
+
+	.sidebar-items .menu-contents{
+		display: flex;
+		flex-direction: column;
+		margin-top:50px;
+		text-align: center;
+		list-style-type: none;
+		height: 100%;
+		justify-content: center;
+		
+	}
+	.sidebar-items li a{
+		font-size: 2mm;
+		font-family: 'Times New Roman', Times, serif;
+		transition: 1.5s ease;
+		color: white;
+		line-height: 0rem;
+
+	}
+
+	.sidebar-items li a:after{
+		content: "\00bb";
+		margin:2px;
+		opacity: 0;
+	  }
+	  
+	.sidebar-items a:hover{
+		text-decoration: none;
+		transition: 0.9s ease;
+		padding-right: 20px;
+		color: red;
+
+
+	}
+	.sidebar-items li:hover a:after{
+		opacity: 1;
+		transition: 1s ease;
+	}
+	.sidebar-items li:hover a:active{
+		padding-left: 20px;
+	}
+
+	.image-rotator{
+		display: block;
+	}
+	
+.image-rotator img{
+	position: absolute;
+	top:10px;
+	left:20px;
+	height:80px;
+	width:60px;
+	cursor: pointer;
+	overflow: hidden;
+	transform:rotate(-20deg);
+	border: 2px solid orange;
+	transition: 0.5s;
+	border-radius: 5px;
+}
+
+.image-rotator img:hover{
+	transform:rotate(0);
+	transition: 0.5s;
+}
+
+.sidebar-items .menu-about{
+	display:none
+}
+}

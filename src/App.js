@@ -41,11 +41,11 @@ class App extends Component {
         {backdop}
         <Router>
           <Switch>
-            <Route path="/home"><Home /></Route>
-            <Route path="/resume"><Resume /></Route>
-            <Route path="/projects"><Projects /></Route>
-            <Route path="/resume"><Resume /></Route>
-            <Route path="/contact"><Contact /></Route>
+            <Route path="/Home"><Home /></Route>
+            <Route path="/Resume"><Resume /></Route>
+            <Route path="/Projects"><Projects /></Route>
+            <Route path="/Resume"><Resume /></Route>
+            <Route path="/Contact"><Contact /></Route>
             <Route path="/"><Home /></Route>
           </Switch>
         </Router>

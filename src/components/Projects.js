@@ -3,7 +3,6 @@ import ServingSundays from './ServingSundays';
 import OrganicFarming from './OrganicFarming';
 import '../Projects.css';
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,

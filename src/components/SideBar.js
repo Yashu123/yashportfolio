@@ -1,7 +1,6 @@
 import React from 'react'
 import '../SideBar.css'
 import image1 from '../images/image1.jpg'
-import image2 from '../images/yash.jpg'
 
 const SideBar = props => {
     let drawerClass = 'sidebar-items';

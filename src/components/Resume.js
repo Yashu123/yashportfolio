@@ -4,7 +4,6 @@ import amazonPic from '../images/Amazon-Logo_Feature.jpg'
 import verizonPic from '../images/verizon-logo-phone-7147.webp'
 import deltaPic from '../images/delta-logo-removebg-preview.png'
 import deltaPict from '../images/delta-pic.jpg'
-import cuDenverPic from '../images/cudenver.jpg'
 
 
 export default function Resume() {

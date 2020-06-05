@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import Contact from './components/Contact';
@@ -9,7 +9,6 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Backdrop from './components/Backdrop';
 import ToolBar from './components/ToolBar';
-
 
 class App extends Component {
 
@@ -30,7 +29,6 @@ class App extends Component {
   }
   render() {
     let backdop;
-    let menuIcon;
     if (this.state.isOpen) {
       backdop = <Backdrop clickDrop={this.backdropClose} />
   
@@ -48,6 +46,7 @@ class App extends Component {
             <Route path="/projects"><Projects /></Route>
             <Route path="/resume"><Resume /></Route>
             <Route path="/contact"><Contact /></Route>
+            <Route path="/"><Home /></Route>
           </Switch>
         </Router>
       </div>

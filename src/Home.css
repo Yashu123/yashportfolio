@@ -166,7 +166,8 @@ animation-play-state: paused;
 }
 
 @media screen and (max-width:600px){
-    .home-container{
-        display: none;
-    }
+
+    
+
+
 }

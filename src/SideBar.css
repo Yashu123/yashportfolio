@@ -105,21 +105,20 @@
 .image-rotator img{
 	position: absolute;
 	top:10px;
-	left:20px;
+	left:10px;
 	height:80px;
 	width:60px;
 	cursor: pointer;
-	overflow: hidden;
-	transform:rotate(-20deg);
-	border: 2px solid orange;
 	transition: 0.5s;
+	border: 2px solid orange;
 	border-radius: 5px;
 }
 
+
 .image-rotator img:hover{
-	transform:rotate(0);
+	transform:rotate(-20deg);
 	transition: 0.5s;
-}
+} 
 
 .sidebar-items .menu-about{
 	display:none
